@@ -9,7 +9,7 @@ import {
   Pressable,
 } from "react-native";
 
-export default function Card({ anime, navigation }) {
+export default function SearchCard({ anime, navigation }) {
   return (
     <>
       <Pressable
@@ -19,7 +19,7 @@ export default function Card({ anime, navigation }) {
       >
         <View
           style={{
-            width: 125,
+            width: 115,
             height: 180,
             backgroundColor: "white",
             // marginLeft: 3,

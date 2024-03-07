@@ -9,14 +9,14 @@ import {
   Image,
   ScrollView,
 } from "react-native";
-import { FontAwesome5 } from "@expo/vector-icons";
+
 import { Ionicons } from "@expo/vector-icons";
 import axios from "../config/instance";
-import { useEffect, useState } from "react";
-import RecentList from "../components/Card";
+import { useEffect, useLayoutEffect, useState } from "react";
+
 import Card from "../components/Card";
 
-export default function HomeScreen({ navigation }) {
+export default function Home({ navigation }) {
   const [showing, setShowing] = useState([]);
   const [recommendation, setRecommendation] = useState([]);
   const [topAnime, setTopAnime] = useState([]);
@@ -112,7 +112,6 @@ export default function HomeScreen({ navigation }) {
                   alignItems: "center",
                 }}
               >
-                <Ionicons name="close-outline" size={40} color="black" />
                 <Text
                   style={{
                     fontWeight: "500",
@@ -121,7 +120,6 @@ export default function HomeScreen({ navigation }) {
                 >
                   No Data
                 </Text>
-                <Ionicons name="close-outline" size={40} color="black" />
               </View>
             ) : (
               <View
@@ -160,7 +158,6 @@ export default function HomeScreen({ navigation }) {
                   alignItems: "center",
                 }}
               >
-                <Ionicons name="close-outline" size={40} color="black" />
                 <Text
                   style={{
                     fontWeight: "500",
@@ -169,7 +166,6 @@ export default function HomeScreen({ navigation }) {
                 >
                   No data
                 </Text>
-                <Ionicons name="close-outline" size={40} color="black" />
               </View>
             ) : (
               <View
@@ -212,7 +208,6 @@ export default function HomeScreen({ navigation }) {
                   alignItems: "center",
                 }}
               >
-                <Ionicons name="close-outline" size={40} color="black" />
                 <Text
                   style={{
                     fontWeight: "500",
@@ -221,7 +216,6 @@ export default function HomeScreen({ navigation }) {
                 >
                   No data
                 </Text>
-                <Ionicons name="close-outline" size={40} color="black" />
               </View>
             ) : (
               <View
@@ -260,7 +254,6 @@ export default function HomeScreen({ navigation }) {
                   alignItems: "center",
                 }}
               >
-                <Ionicons name="close-outline" size={40} color="black" />
                 <Text
                   style={{
                     fontWeight: "500",
@@ -269,7 +262,6 @@ export default function HomeScreen({ navigation }) {
                 >
                   No data
                 </Text>
-                <Ionicons name="close-outline" size={40} color="black" />
               </View>
             ) : (
               <View
@@ -308,7 +300,6 @@ export default function HomeScreen({ navigation }) {
                   alignItems: "center",
                 }}
               >
-                <Ionicons name="close-outline" size={40} color="black" />
                 <Text
                   style={{
                     fontWeight: "500",
@@ -317,7 +308,6 @@ export default function HomeScreen({ navigation }) {
                 >
                   No data
                 </Text>
-                <Ionicons name="close-outline" size={40} color="black" />
               </View>
             ) : (
               <View

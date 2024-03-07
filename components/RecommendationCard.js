@@ -9,12 +9,12 @@ import {
   Pressable,
 } from "react-native";
 
-export default function Card({ anime, navigation }) {
+export default function RecommendationCard({ anime, navigation }) {
   return (
     <>
       <Pressable
         onPress={() => {
-          navigation.navigate("Detail", { anime });
+          navigation.replace("Detail", { anime });
         }}
       >
         <View
